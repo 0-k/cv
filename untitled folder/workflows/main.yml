@@ -2,7 +2,7 @@ name: Build LaTeX document
 on: [push]
 jobs:
   build:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2
