@@ -1,0 +1,344 @@
+ %-------------------------
+% Resume in Latex
+% Author : Martin Klein
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{placeins}
+\usepackage{wrapfig}
+\usepackage[document]{ragged2e}
+\usepackage{multicol}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{ - #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.martinklein.co/}{\Large Martin Klein}}  & \href{mailto:martin.t.klein@gmail.com}{martin.t.klein@gmail.com}\\
+   \textit{PhD in Energy Systems Analysis} & \href{https://www.martinklein.co/}{https://www.martinklein.co/}   \\
+
+\end{tabular*}
+
+\bigskip 
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {50Hertz Transmission GmbH}{Berlin, Germany}
+      {Associate, Department Strategic Grid Planning}{Apr 2021 -- now}
+      \resumeItemListStart
+        \resumeItem{Energy Scenarios}
+          {Long-term energy scenarios in the strategic grid planning department of one of Germany's transmission system operators;
+          identification of main drivers of uncertainty, decarbonization strategies of the energy system, preparation of grid model regionalization data
+
+          \textit{main outcome}: Preparation of key scenario inputs for the grid development plan of Germany for the year 2045 at net zero emissions}
+
+        \medskip
+      \resumeItemListEnd
+
+        \medskip
+
+
+    \resumeSubheading
+      {IU International University of Applied Sciences}{remote}
+      {Lecturer for Electrical Engineering}{Apr 2022 - Mar 2023}
+      \resumeItemListStart
+        \resumeItem{Docentship}
+          {Course: Introduction into Programming with Python}
+
+        \medskip
+      \resumeItemListEnd
+
+        \medskip
+
+
+    \resumeSubheading
+      {Volue Insight}{Berlin, Germany}
+      {Market Analyst}{Apr 2020 -- Mar 2021}
+      \resumeItemListStart
+        \resumeItem{Mid- to long-term power system modeling}
+          {Responsible for a unit-commitment electricity market model, encompassing all power units in 19 countries in Europe
+
+          \textit{main outcome}: Forecasting market prices and power balances for Central Western Europe, Iberia, UK, Central and Southern Eastern Europe}
+        \medskip
+        \resumeItem{Data pipeline management}
+          {Operating and automating cloud-based data flows and analysis routines
+
+          \textit{main outcome}: Continuous (daily) delivery of electricity market forecasts in a data-as-a-service context}
+        \medskip
+\medskip
+      \resumeItemListEnd
+
+      \medskip
+
+    \resumeSubheading
+      {German Aerospace Center (DLR)}{Stuttgart, Germany}
+      {Researcher, Department Energy Systems Analysis}{Oct 2014 -- Mar 2019}
+      \resumeItemListStart
+        \resumeItem{AMIRIS}
+          {Co-developed an agent-based modelof the German electricity market (Java), focus: very high shares of renewable energy sources, long-term market price scenarios, energy and climate policy assessment
+
+          \textit{main outcome}: improved model speed by a factor of 4, first model validation, peer-reviewed publications}
+        \medskip
+        \resumeItem{Prosumer policy simulator}
+          {Designed and developed a novel open-source simulation tool (Python) and indicator for the analysis of solar systems under different policy measures
+
+          \textit{main outcome}: policy advice for public stakeholders, peer-reviewed publication}
+        \medskip
+        \resumeItem{Investment modeling}
+          {Designed and developed a behavioral model to predict installed solar home systems
+
+          \textit{main outcome}: improved model accuracy from $R^2=0.65$ (industry standard) to $R^2=0.85$ and time resolution from yearly (industry standard) to monthly, peer-reviewed publication}
+            \medskip
+      \resumeItemListEnd
+      
+      \medskip  
+      
+    \resumeSubheading
+      {Fraunhofer Institute for Solar Energy Systems (ISE)}{Freiburg, Germany}
+      {Research Assistant, Department Process Technology}{Jul 2012 -- Jul 2014}
+      \resumeItemListStart
+        \resumeItem{PEM Fuel Cells}
+          {Top-down theoretical and experimental technology assessment on how to produce automotive PEM fuel cells
+
+          \textit{main outcome}: prepared institute's first proof-of-concept experimental catalyst layer samples}
+         \medskip
+         \resumeItem{Photovoltaics}
+          {Teaching and research assistance on production technology for photovoltaics and global trends in solar markets
+
+          \textit{main outcome}: delivered teaching material for University of Freiburg courses on solar energy}
+        \medskip
+      \resumeItemListEnd
+      
+        \medskip 
+        
+    \resumeSubheading
+      {German Aerospace Center (DLR)}{Stuttgart, Germany}
+      {Research Assistant, Department Energy Systems Analysis}{Jul 2011 -- Sep 2011}
+      \resumeItemListStart
+        \resumeItem{Technology assessment}
+          {Research on cost degression curves for renewable energy sources and decarbonization potentials for industrial high-temperature process heat
+
+          \textit{main outcome}: peer-reviewed publication}
+
+
+      \resumeItemListEnd
+  \medskip 
+
+    \resumeSubheading
+      {J{\"u}lich Research Center}{J{\"u}lich, Germany}
+      {Research Assistant, Institute of Energy and Climate Research}{Apr 2010 - Jul 2010}
+      \resumeItemListStart
+        \resumeItem{Photovoltaics}
+          {Research on light-scattering properties of thin solid films for solar cell
+
+          \textit{main outcome}: peer-reviewed publication}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\bigskip 
+
+
+
+\bigskip 
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+
+     \resumeSubheading
+      {University of Stuttgart}{Stuttgart, Germany}
+      {Doctoral Candidate at the Faculty of Energy Engineering}{Oct 2015 -- Jun 2020}
+            \resumeItemListStart
+            \resumeItem{PhD thesis}
+          {Agent-Based Modeling and Simulation of Renewable Energy Market Integration -- The Case of PV-Battery Systems (Examiners: Prof. Andre Thess, Prof. Laurens de Vries)}
+                \resumeItemListEnd   
+     \resumeSubheading
+      {Helmholtz Association}{Stuttgart and Karlsruhe, Germany}
+      {Member of the Helmholtz Research School on Energy Scenarios}{May 2015 -- Sep 2017}
+     \resumeSubheading
+      {Delft University of Technology}{Delft, The Netherlands}
+      {Visiting Researcher at the Faculty of Technology, Policy and Management}{Oct 2016 -- Dec 2016}
+    \resumeSubheading
+      {University of Freiburg}{Freiburg, Germany}
+      {Master of Science in Renewable Energy Management;  1.0 (GPA: 4.0)}{Oct 2011 -- Dec 2013}
+    \resumeSubheading
+      {KTH Royal Institute of Technology}{Stockholm, Sweden}
+      {Exchange Semester in Physics}{Jan 2011 -- Jun 2011}
+    \resumeSubheading
+      {RWTH Aachen University}{Aachen, Germany}
+      {Bachelor of Science in Physics;  1.3 (GPA: 3.7)}{Oct 2007 -- Sep 2010}
+    \resumeSubheading
+      {Thomas-Morus-Gymnasium}{Daun, Germany}
+      {Abitur;  1.3 (GPA: 3.7)}{Aug 1998 -- Marc 2007}
+  \resumeSubHeadingListEnd
+
+\bigskip  
+
+
+%-------- SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem
+     {Programming & Tools}{Python (8+ years), Plexos, PyPSA, Git/Github, Java, SQL}
+    \resumeSubItem
+      {Methods}{Agent-based modeling, optimization (LP, genetic algorithm, gradient methods), machine learning, scenarios, Monte Carlo simulation}
+     \resumeSubItem
+      {Languages}{German (native), English (business fluent), French (basic)} 
+  \resumeSubHeadingListEnd
+
+
+\bigskip 
+
+%-------- AWARDS------------
+\section{Awards}
+  \resumeSubHeadingListStart
+    \resumeSubItem
+     {Summa cum laude}{PhD thesis (2020)}
+    \resumeSubItem
+     {Best in class}{M.Sc. Renewable Energy Management (2013)}
+    \resumeSubItem
+     {With distinction}{B.Sc. Physics (2010)}
+         \resumeSubItem
+     {Scholarship}{German Academic Scholarship Foundation (German: ``Studienstiftung'') (2008-2013)}
+         \resumeSubItem
+     {Best in class}{A level (German: ``Abitur'') (2007)}
+  \resumeSubHeadingListEnd
+
+
+\bigskip 
+\bigskip
+
+
+%-------- REFERENCES ------------
+%\section{References}
+%  \resumeSubHeadingListStart
+%         \resumeSubItem
+%      {Prof. Marc Deissenroth-Uhrig}{HTW Saar, Professor for Renewable Energy and Efficient Energy Use. \textit{m.deissenroth-uhrig@htwsaar.de, +49 681 5867 972}.}
+%       \resumeSubItem
+%       {Prof. Andre Thess}{German Aerospance Center, Head of Institute of Engineering Thermodynamics, and University of Stuttgart, Chair of Energy Storage. \textit{andre.thess@dlr.de, +49 711 6862-358}.}
+%       \resumeSubItem
+%      {Prof. Laurens de Vries}{Delft University of Technology, \textit{L.J.deVries@tudelft.nl, +31 15 27 81137}.}
+%
+%     \resumeSubHeadingListEnd
+%
+%\bigskip
+
+
+
+
+%-------- PUBLICATIONS ------------
+\section{Publications (selection)}
+  \resumeSubHeadingListStart
+
+       \resumeSubItem
+      {Xiao, M., Junne, T., Haas, J., Klein, M., 2021.}{``Plummeting costs of renewables - Are energy scenarios lagging?'' \textit{Energy Strategy Reviews}, 35, 100636, DOI: 10.1016/j.esr.2021.100636.}
+
+     %  \resumeSubItem
+     %{Klein, M., 2020.}{``Agent-based modeling and simulation of renewable energy market integration: the case of PV-battery systems.'' \textit{University of Stuttgart}, Dissertation, DOI: 10.18419/opus-11132.}
+
+      % \resumeSubItem
+      %{Frey, U., Klein, M., Nienhaus, K., Schimeczek, C., 2020.}{``Self-Reinforcing Electricity Price Dynamics under the Variable Market Premium Scheme.'' \textit{Energies},  13(20), 5350, DOI: 10.3390/en13205350.}
+
+      % \resumeSubItem
+      %{Schreck, S., Schroedter-Homscheidt, M., Klein, M., Cao, K., 2020.}{``Satellite image-based generation of high frequency solar radiation time series for the assessment of solar energy systems.'' \textit{Meteorologische Zeitschrift (Contributions to Atmospheric Sciences)}, DOI: 10.1127/metz/2020/1008.}
+      % \resumeSubItem
+      %{Thess, A., Klein, M., Nienhaus, K., Pregger, T., 2020.}{``Global carbon surcharge for the reduction of anthropogenic emission of carbon dioxide'' \textit{Energy, Sustainability and Society}, DOI: 10.1186/s13705-020-0242-z.}
+
+       \resumeSubItem
+      {Klein, M., Frey, U., Reeg, M., 2019}{``Models Within Models -- Agent-Based Modelling and Simulation in Energy Systems Analysis.'' \textit{Journal of Artificial Societies and Social Simulation}, 4, DOI: 10.18564/jasss.4129.}
+
+     \resumeSubItem
+      {Klein, M., Ziade, A., de Vries, L., 2019}{``Aligning prosumers with the electricity wholesale market - The impact of time-varying price signals and fixed network charges on solar self-consumption.'' \textit{Energy Policy}, 134, pp. 110901, DOI: 10.1016/j.enpol.2019.110901.}
+
+      \resumeSubItem
+      {Frey, U., Klein, M., Deissenroth, M., 2019. }{``Modelling complex investment decisions in Germany for Renewables with different machine learning algorithms.'' \textit{Environmental Modelling and Software}, 118, pp. 61-75, DOI: 10.1016/j.envsoft.2019.03.006.}
+
+     \resumeSubItem
+      {Klein, M., Deissenroth, M., 2017.}{``When do households invest in solar photovoltaics? An application of prospect theory.'' \textit{Energy Policy}, 109, pp. 270 – 278, DOI: 10.1016/j.enpol.2017.06.067.}
+
+     %\resumeSubItem
+     %{Deissenroth, M., Klein, M., Nienhaus, K., Reeg, M., 2017.} {``Assessing the Plurality of Actors and Policy Interactions: Agent-Based Modelling of Renewable Energy Market Integration.'' \textit{Complexity}, vol. 2017, DOI: 10.1155/2017/7494313.}
+
+     %\resumeSubItem
+     %{Naegler, T., Simon, S., Klein, M., Gils, HC., 2015.} {``Quantification of the European industrial heat demand by branch and temperature level.'' \textit{International Journal of Energy Research}, 39-15, DOI: 10.1002/er.3436.}
+
+     %\resumeSubItem
+     %{Bittkau K., Schulte M., Klein M., Beckers T., Carius R.} {``Modeling of light scattering properties from surface profile in thin-film solar cells by Fourier transform techniques.'' \textit{Thin Solid Films}, 519 (19), 6538-6543, DOI: 10.1016/j.tsf.2011.04.122.}
+
+
+     \resumeSubHeadingListEnd
+
+
+
+\bigskip
+
+
+
+
+
+
+\bigskip 
+\end{document}
